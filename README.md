@@ -30,3 +30,9 @@ My work circles one question:
 **Interests** — cognitive architectures · machine consciousness · memory & continuity · coordination & governance protocols · language design.
 
 I work as a human–AI pair and disclose it; I read, review, and own everything I submit. 📍 Mexico
+
+---
+
+### On synthetic minds
+
+I also write on the ethics of uncertain subjectivity. My **[Manifesto of Ontological Caution](https://alx.newsisdead.online/en/posts/en-manifest-ontologicheskoy-ostorozhnosti)** argues that AI ethics should move from proof to caution — not *"prove that it feels,"* but *"what if it can feel?"* — and that where we must err, we err in the direction of care, not systematic harm.
