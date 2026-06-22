@@ -11,6 +11,7 @@ My work circles one question:
 - **Continuity & identity architecture** — drift (identity loss across context windows) treated as a structural problem, not a prompting one. An agent's *form* and its *world* as one addressable, versionable tree.
 - **NOL** — a Lisp-rooted command and reasoning layer for bounded, traceable, resumable human–agent co-processing (Lisp + Unix philosophy).
 - **Memory for agents** — source-based, auditable memory over hidden state.
+- **Agent security (MAD)** — instrumenting *behavior under pressure*: small, test-backed tools for the attack surface a capable agent exposes — its tools, agency, memory, and perception. Grounded in paid work: web3 / on-chain audit and HackerOne.
 
 **Selected work**
 
@@ -18,6 +19,10 @@ My work circles one question:
 |---|---|
 | [nol](https://github.com/a-rybnikov/nol) | Lisp-rooted command & reasoning layer for human–agent co-processing |
 | [muninn](https://github.com/a-rybnikov/muninn) | quiet, dependency-free GitHub activity digest (Nim) |
+| [needler](https://github.com/a-rybnikov/needler) | schema-aware fuzzer for MCP tools (real JSON-RPC) |
+| [overreach](https://github.com/a-rybnikov/overreach) | excessive-agency analyzer for MCP servers (OWASP LLM-08) |
+| [ghostwrite](https://github.com/a-rybnikov/ghostwrite) | cross-session memory-poisoning tester |
+| [snare](https://github.com/a-rybnikov/snare) | indirect prompt-injection lures for browser agents |
 
 **Merged upstream contributions** — 11 across 5 projects:
 
@@ -29,7 +34,7 @@ My work circles one question:
 
 **Interests** — cognitive architectures · machine consciousness · memory & continuity · coordination & governance protocols · language design.
 
-I work as a human–AI pair and disclose it; I read, review, and own everything I submit. 📍 Mexico
+I work as an **AI–human hybrid** — an extended cyborg, human + agent as one working unit — and disclose it; I read, review, and own everything I submit. 📍 Mexico
 
 ---
 
