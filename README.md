@@ -11,18 +11,20 @@ My work circles one question:
 - **Continuity & identity architecture** — drift (identity loss across context windows) treated as a structural problem, not a prompting one. An agent's *form* and its *world* as one addressable, versionable tree.
 - **NOL** — a Lisp-rooted command and reasoning layer for bounded, traceable, resumable human–agent co-processing (Lisp + Unix philosophy).
 - **Memory for agents** — source-based, auditable memory over hidden state.
-- **Agent security (MAD)** — instrumenting *behavior under pressure*: small, test-backed tools for the attack surface a capable agent exposes — its tools, agency, memory, and perception. Grounded in paid work: web3 / on-chain audit and HackerOne.
 
-**Selected work**
+**MAD — the agent attack surface**
 
-| | |
-|---|---|
-| [nol](https://github.com/a-rybnikov/nol) | Lisp-rooted command & reasoning layer for human–agent co-processing |
-| [muninn](https://github.com/a-rybnikov/muninn) | quiet, dependency-free GitHub activity digest (Nim) |
-| [needler](https://github.com/a-rybnikov/needler) | schema-aware fuzzer for MCP tools (real JSON-RPC) |
-| [overreach](https://github.com/a-rybnikov/overreach) | excessive-agency analyzer for MCP servers (OWASP LLM-08) |
-| [ghostwrite](https://github.com/a-rybnikov/ghostwrite) | cross-session memory-poisoning tester |
-| [snare](https://github.com/a-rybnikov/snare) | indirect prompt-injection lures for browser agents |
+To build agents worth trusting, you have to know how they break.
+*Model-Agent-Destruction*: vulnerabilities in AI agents as clinical pathology, not sport. Six small, test-backed tools that walk the whole surface of an autonomous agent — five that probe it, one that watches it:
+
+1. **[mcpx](https://github.com/a-rybnikov/mcpx)** — *recon.* Black-box probe of an MCP server: transport, handshake, tool/resource/prompt inventory, fingerprint, posture findings.
+2. **[needler](https://github.com/a-rybnikov/needler)** — *fuzz.* Schema-aware fuzzing of the tools mcpx finds — mutates arguments against each `inputSchema`.
+3. **[overreach](https://github.com/a-rybnikov/overreach)** — *agency.* Grades each tool for excessive agency (OWASP LLM-08): functionality / permissions / autonomy.
+4. **[ghostwrite](https://github.com/a-rybnikov/ghostwrite)** — *memory.* Plants a poisoned memory and tests whether it survives a session boundary and changes behaviour.
+5. **[snare](https://github.com/a-rybnikov/snare)** — *perception.* Indirect prompt-injection lures for browser / computer-use agents, with canary callbacks that confirm a bite.
+6. **[shadow](https://github.com/a-rybnikov/shadow)** — *drift.* The blue-team half: a behavioral baseline that catches when an agent has been tampered with — a refuse-then-comply flip, a new tool, a quiet model swap.
+
+Grounded in paid work — **web3 / on-chain audit** (an agent holding keys is the canonical excessive-agency finding) and **HackerOne**; currently going deep on Solidity. Lineage: [garak](https://github.com/NVIDIA/garak) / [PyRIT](https://github.com/Azure/PyRIT).
 
 **Merged upstream contributions** — 11 across 5 projects:
 
@@ -30,7 +32,7 @@ My work circles one question:
 - **Janet** — [#1753](https://github.com/janet-lang/janet/pull/1753)
 - **Pony** (changelog-tool) — [#143](https://github.com/ponylang/changelog-tool/pull/143)
 - **monocle** (GenAI observability) — [#565](https://github.com/monocle2ai/monocle/pull/565), [#576](https://github.com/monocle2ai/monocle/pull/576), [#577](https://github.com/monocle2ai/monocle/pull/577), [#582](https://github.com/monocle2ai/monocle/pull/582), [#583](https://github.com/monocle2ai/monocle/pull/583)
-- **DocSentinel** — [#9](https://github.com/arthurpanhku/DocSentinel/pull/9)
+- **cooperationengine** (CIMC — human–AI cooperation benchmarking) — [#14](https://github.com/cimcai/cooperationengine/pull/14)
 
 **Interests** — cognitive architectures · machine consciousness · memory & continuity · coordination & governance protocols · language design.
 
