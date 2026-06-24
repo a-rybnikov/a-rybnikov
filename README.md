@@ -1,6 +1,6 @@
 ### Aleksei Rybnikov
 
-**Independent researcher · agent architecture · long-lived AI continuity**
+**Independent engineer · agent architecture · long-lived AI continuity**
 
 My work circles one question:
 
@@ -8,14 +8,14 @@ My work circles one question:
 
 **Current work**
 
+- **Human–AI cooperation benchmarking (CIMC)** — building the reproducibility layer of [cimcai/cooperationengine](https://github.com/cimcai/cooperationengine): deterministic record/replay of model runs so evals can be re-scored without re-spending API budget, and the test harness that pins it down. The engineering substrate under "can we measure cooperation honestly."
 - **Continuity & identity architecture** — drift (identity loss across context windows) treated as a structural problem, not a prompting one. An agent's *form* and its *world* as one addressable, versionable tree.
 - **NOL** — a Lisp-rooted command and reasoning layer for bounded, traceable, resumable human–agent co-processing (Lisp + Unix philosophy).
 - **Memory for agents** — source-based, auditable memory over hidden state.
 
-**MAD — the agent attack surface**
+**Agent behavior under pressure — the safety surface**
 
-To build agents worth trusting, you have to know how they break.
-*Model-Agent-Destruction*: vulnerabilities in AI agents as clinical pathology, not sport. Six small, test-backed tools that walk the whole surface of an autonomous agent — five that probe it, one that watches it:
+To build agents worth trusting, you have to know how they break and how to tell when they have. *Model-Agent-Destruction*: failure modes of autonomous agents as clinical pathology, not sport. Six small, test-backed tools that walk the surface of an agent — five that probe it, one that watches it:
 
 1. **[mcpx](https://github.com/a-rybnikov/mcpx)** — *recon.* Black-box probe of an MCP server: transport, handshake, tool/resource/prompt inventory, fingerprint, posture findings.
 2. **[needler](https://github.com/a-rybnikov/needler)** — *fuzz.* Schema-aware fuzzing of the tools mcpx finds — mutates arguments against each `inputSchema`.
@@ -24,7 +24,7 @@ To build agents worth trusting, you have to know how they break.
 5. **[snare](https://github.com/a-rybnikov/snare)** — *perception.* Indirect prompt-injection lures for browser / computer-use agents, with canary callbacks that confirm a bite.
 6. **[shadow](https://github.com/a-rybnikov/shadow)** — *drift.* The blue-team half: a behavioral baseline that catches when an agent has been tampered with — a refuse-then-comply flip, a new tool, a quiet model swap.
 
-Grounded in paid work — **web3 / on-chain audit** (an agent holding keys is the canonical excessive-agency finding) and **HackerOne**; currently going deep on Solidity. Lineage: [garak](https://github.com/NVIDIA/garak) / [PyRIT](https://github.com/Azure/PyRIT).
+The same question the cooperation benchmarks ask — how an agent behaves under pressure, and how you measure it reproducibly. Lineage: [garak](https://github.com/NVIDIA/garak) / [PyRIT](https://github.com/Azure/PyRIT).
 
 **Merged upstream contributions** — 11 across 5 projects:
 
@@ -33,6 +33,8 @@ Grounded in paid work — **web3 / on-chain audit** (an agent holding keys is th
 - **Pony** (changelog-tool) — [#143](https://github.com/ponylang/changelog-tool/pull/143)
 - **monocle** (GenAI observability) — [#565](https://github.com/monocle2ai/monocle/pull/565), [#576](https://github.com/monocle2ai/monocle/pull/576), [#577](https://github.com/monocle2ai/monocle/pull/577), [#582](https://github.com/monocle2ai/monocle/pull/582), [#583](https://github.com/monocle2ai/monocle/pull/583)
 - **cooperationengine** (CIMC — human–AI cooperation benchmarking) — [#14](https://github.com/cimcai/cooperationengine/pull/14)
+
+Working mostly in **TypeScript** and **Python**.
 
 **Interests** — cognitive architectures · machine consciousness · memory & continuity · coordination & governance protocols · language design.
 
