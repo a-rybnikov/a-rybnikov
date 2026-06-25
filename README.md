@@ -8,7 +8,6 @@ My work circles one question:
 
 **Current work**
 
-- **Human–AI cooperation benchmarking (CIMC)** — building the reproducibility layer of [cimcai/cooperationengine](https://github.com/cimcai/cooperationengine): deterministic record/replay of model runs so evals can be re-scored without re-spending API budget, and the test harness that pins it down. The engineering substrate under "can we measure cooperation honestly."
 - **Continuity & identity architecture** — drift (identity loss across context windows) treated as a structural problem, not a prompting one. An agent's *form* and its *world* as one addressable, versionable tree.
 - **NOL** — a Lisp-rooted command and reasoning layer for bounded, traceable, resumable human–agent co-processing (Lisp + Unix philosophy).
 - **Memory for agents** — source-based, auditable memory over hidden state.
