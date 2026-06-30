@@ -22,7 +22,7 @@ and feeling* — making reasoning, and even ethics, formal without flattening it
 
 ### Upstream contributions
 
-- **cooperationengine** (CIMC, human-AI cooperation benchmark) — [#26](https://github.com/cimcai/cooperationengine/pull/26) HELM-style metric primitives, [#14](https://github.com/cimcai/cooperationengine/pull/14) deterministic record/replay *(both merged)*
+- **cooperationengine** (CIMC, human–AI cooperation benchmark) — [#30](https://github.com/cimcai/cooperationengine/pull/30) emergent, evidence-pinned ethical space, [#28](https://github.com/cimcai/cooperationengine/pull/28) model-capability tiers, [#27](https://github.com/cimcai/cooperationengine/pull/27) cross-run aggregation + statistical delta, [#26](https://github.com/cimcai/cooperationengine/pull/26) HELM-style metric primitives, [#14](https://github.com/cimcai/cooperationengine/pull/14) deterministic record/replay *(all merged)*
 - **Nim** — [#25832](https://github.com/nim-lang/Nim/pull/25832), [#25831](https://github.com/nim-lang/Nim/pull/25831), [#25890](https://github.com/nim-lang/Nim/pull/25890)
 - **Janet** — [#1753](https://github.com/janet-lang/janet/pull/1753)
 - **Pony** (changelog-tool) — [#143](https://github.com/ponylang/changelog-tool/pull/143)
